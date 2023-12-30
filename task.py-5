@@ -1,0 +1,162 @@
+# Python Data Types
+#  Python | Sets 
+numbers = [1 , 2 , 3 , 4]
+first = set(numbers)
+second = {1 , 5}
+
+print(first | second)
+print(first & second)
+print(first - second)
+print(first ^ second)
+
+# Python | Dictionary
+student = {'name' : 'Ali' , 'age' : 22 , 'courses' : ['Math' , 'C.s']}
+print(student['name'])
+print(student['age'])
+print(student.get('phone'))
+print(student['courses'])
+
+# Python | Arrays
+from array import *
+vals = array('i',[5,9,8,4,2])
+print(vals)
+print(vals.typecode)
+print(vals.reverse())
+
+
+
+# Python Variables
+# Variables, expression, condition and function
+  # Variables
+a = 15 
+b = 10 
+print(a,b)
+  # Expression
+a = 15 
+b = 10 
+print(a*b)
+print(a/b)
+print(a+b)
+print(a-b)
+  # Condition
+a = 2
+if a % 2 == 0:
+    print("a is even")
+elif a % 2 != 0:
+    print("a is odd")    
+  # function
+def cheakoddoreven(a):
+    if a % 2 == 0:
+       print("a is even")
+    elif a % 2 != 0:
+        print("a is odd")  
+
+cheakoddoreven(2)
+
+
+# Maximum possible value of an integer in python?
+x = 10000000000000000000000000000000000000000000
+x = x + 1
+print(x)
+
+
+# Global and local variables in python
+  #Global example
+a=5
+def function(n):
+    b=9
+    print(a,b)
+    print(n,"us light")
+
+function("Sun gives")
+
+  # local exampla
+def function(n):
+    a=1
+    b=2
+    print(a,b)
+    print(n,"us light")
+function("Sun gives")
+
+
+# Packing and unpacking arguments in python
+   #packing
+students = ['Asalm' , 'Ahmad' , 'Asad']
+print(students)
+
+  #Unpacking
+s1 , s2 , s3 = students
+print(s1)
+print(s2)
+print(s3)
+
+
+# Type conversion in python
+value = input("Enter the value :")
+print(value)
+print(type(value))
+
+  #convert value to int
+n1 = int(value)
+print(n1)
+print(type(n1))
+
+  #convert value to float
+f1 = float(value)
+print(f1)
+print(type(f1))
+
+  #convert value to str
+value = input("Enter your name:")
+print(value)
+list1 = list(value)
+print(list1)
+print(type(list1))
+
+
+#Byte object Vs  string object
+  #Byte object
+b = b'Sun gives us light' 
+print(type(b)) 
+  #string object
+a = 'Sun gives us light'
+print(type(a))
+
+
+#Print single and Multiple variable
+  #Print single variable 
+name = 'Asad'
+age = '22'
+basket = 'Apples : 5','Banana : 6'
+print('Your name is', name)
+print('Your age is ' , age)
+print('Your basket is full of' , basket)
+  #Print multiple variable
+a = 1
+b = 2
+c= 3
+print(a,b,c)
+z = a+b+c
+print(z)
+
+
+# Swap variable
+a = 6
+b = 4
+a,b = b,a 
+print(a)
+print(b)
+
+# Private variables name(A special variable) in python 
+def add():
+    print("result 1 is " , __name__)
+def sub():
+    print("result 2 is") 
+
+def main():
+    print("in cals main")
+    add()
+    sub()
+
+if __name__ =="__main__" :
+    main()           
